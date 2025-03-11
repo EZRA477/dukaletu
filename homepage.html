@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DukaLetu</title>
+    <link rel="stylesheet" href="CSS/homepage.css">
+</head>
+
+<body>
+
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Welcome to DukaLetu</h1>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#own-store">Own a Store</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="main-container">
+        <!-- Introduction -->
+        <section id="home" class="intro-section">
+            <h2>Your Trusted Partner in Online Selling</h2>
+            <p>We connect sellers and buyers by handling the receiving, packaging, and delivery of products. We also
+                provide the opportunity to own your own online store, simplifying your eCommerce journey.</p>
+
+            <!-- Call to Action Button -->
+            <a href="#own-store" class="cta-button">Start Your Own Online Store</a>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <h2>What We Do</h2>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Company Video"></iframe>
+            <p>Watch this video to understand how we simplify the buying and selling process.</p>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="image-gallery">
+            <img src="image1.jpg" alt="Service Image 1">
+            <img src="image2.jpg" alt="Service Image 2">
+            <img src="image3.jpg" alt="Service Image 3">
+        </section>
+    </div>
+
+    <!-- Buy Section -->
+    <section id="buy" class="buy-section">
+        <h2>Shop Our Products</h2>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="product-search" placeholder="Search for products...">
+            <button onclick="searchProduct()" class="search-button">Search</button>
+        </div>
+
+        <!-- Featured Products -->
+        <h3>Featured Products</h3>
+        <div class="product-gallery">
+            <div class="product-card">
+                <img src="featured1.jpg" alt="Featured Product 1">
+                <p>Product Name</p>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="featured2.jpg" alt="Featured Product 2">
+                <p>Product Name</p>
+                <p>$49.99</p>
+            </div>
+            <div class="product-card">
+                <img src="featured3.jpg" alt="Featured Product 3">
+                <p>Product Name</p>
+                <p>$19.99</p>
+            </div>
+        </div>
+
+        <!-- Hot Sales Section -->
+        <h3>Hot Sales</h3>
+        <div class="product-gallery">
+            <div class="product-card">
+                <img src="hot-sale1.jpg" alt="Hot Sale Product 1">
+                <p>Hot Sale Item</p>
+                <p>$39.99</p>
+            </div>
+            <div class="product-card">
+                <img src="hot-sale2.jpg" alt="Hot Sale Product 2">
+                <p>Hot Sale Item</p>
+                <p>$59.99</p>
+            </div>
+            <div class="product-card">
+                <img src="hot-sale3.jpg" alt="Hot Sale Product 3">
+                <p>Hot Sale Item</p>
+                <p>$24.99</p>
+            </div>
+        </div>
+
+        <!-- Discounted Products -->
+        <h3>Discounted Products</h3>
+        <div class="product-gallery">
+            <div class="product-card">
+                <img src="discount1.jpg" alt="Discounted Product 1">
+                <p>Discounted Item</p>
+                <p>$14.99</p>
+            </div>
+            <div class="product-card">
+                <img src="discount2.jpg" alt="Discounted Product 2">
+                <p>Discounted Item</p>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="discount3.jpg" alt="Discounted Product 3">
+                <p>Discounted Item</p>
+                <p>$9.99</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info">
+        <div class="contact-item">
+            <h3>Contact Us</h3>
+            <p>Email: info@dukaletu.com</p>
+            <p>Phone: +254-104-785-754</p>
+        </div>
+
+        <div class="contact-item">
+            <h3>Our Address</h3>
+            <p>Malindi Town, Malindi, Kilifi.</p>
+        </div>
+
+        <div class="contact-item">
+            <h3>Quick Links</h3>
+            <p><a href="#home">Home</a></p>
+            <p><a href="#about">About Us</a></p>
+            <p><a href="#services">Services</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-media-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2025 Dukaletu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function searchProduct() {
+            let searchQuery = document.getElementById('product-search').value;
+            alert("Searching for: " + searchQuery);
+        }
+    </script>
+
+</body>
+
+</html>
